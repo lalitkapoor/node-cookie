@@ -146,7 +146,7 @@ Properties
   * _secure_ - boolean - the `Secure` cookie flag
   * _httpOnly_ - boolean - the `HttpOnly` cookie flag
   * _extensions_ - `Array` - any unrecognized cookie attributes as strings (even if equal-signs inside)
-               
+
 After a cookie has been passed through `CookieJar.setCookie()` it will have the following additional attributes:
 
   * _hostOnly_ - boolean - is this a host-only cookie (i.e. no Domain field was set, but was instead implied)
@@ -236,7 +236,7 @@ Attributes
 ----------
 
   * _rejectPublicSuffixes_ - boolean - reject cookies with domains like "com" and "co.uk" (default: `true`)
-                         
+
 Since eventually this module would like to support database/remote/etc. CookieJars, continuation passing style is used for CookieJar methods.
 
 .setCookie(cookieOrString, currentUrl, [{options},] cb(err,cookie))
@@ -258,7 +258,7 @@ As per the RFC, the `.hostOnly` property is set if there was no "Domain=" parame
 -------------------------------------------------
 
 __REMOVED__ removed in lieu of the CookieStore API below
-                                                
+
 .getCookies(currentUrl, [{options},] cb(err,cookies))
 -----------------------------------------------------
 
@@ -358,7 +358,7 @@ Pass an error ONLY if removing any existing cookies failed.
 
 (tl;dr: MIT with some MPL/1.1)
 
-Copyright GoInstant, Inc. and other contributors. All rights reserved.
+Copyright 2012- GoInstant, Inc. and other contributors. All rights reserved.
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to
 deal in the Software without restriction, including without limitation the
